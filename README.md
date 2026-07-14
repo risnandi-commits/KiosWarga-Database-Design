@@ -14,3 +14,24 @@ KiosWarga is a production-ready, highly-customizable MySQL database template tai
    ```sql
    CREATE DATABASE db_kioswarga;
    USE db_kioswarga;
+
+## Entity-Relationship Diagram (ERD)
+
+![KiosWarga ERD](ERD_KiosWarga_db.jpg)
+
+### Database Schema Overview
+
+This database is designed to optimize small-scale retail (UMKM) operations by integrating inventory tracking with a loyalty program.
+
+| Entity | Primary Key | Foreign Key | Description |
+| :--- | :--- | :--- | :--- |
+| **Suppliers** | `supplier_id` | None | Manages vendor information. |
+| **Categories** | `category_id` | None | Organizes products into categories. |
+| **Products** | `product_id` | `category_id`, `supplier_id` | Core inventory and pricing details. |
+| **Members** | `member_id` | None | Tracks customer loyalty and points. |
+| **Transactions** | `transaction_id` | `product_id`, `member_id` | Records sales, discounts, and timestamps. |
+
+### Key Features
+* 📦 **Inventory Automation**: Automatically updates stock levels using database triggers.
+* 💳 **Loyalty Integration**: Supports member-based transactions with discount calculations.
+* 📊 **Profit Analytics**: Built-in views to monitor sales performance and net profit.
