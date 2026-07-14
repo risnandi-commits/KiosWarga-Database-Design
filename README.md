@@ -1,3 +1,4 @@
+<img width="2464" height="2374" alt="ERD_KiosWarga_db" src="https://github.com/user-attachments/assets/c640139e-0af0-4952-96d7-ba263cd3ae0e" />
 # KiosWarga - Micro-Retail & POS Database Schema (MySQL)
 
 KiosWarga is a production-ready, highly-customizable MySQL database template tailored for small business retail management, Point of Sales (POS) software, or academic projects. It incorporates automated stock deduction, a customer loyalty system, and analytical views for business tracking.
